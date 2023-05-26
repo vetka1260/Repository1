@@ -1,0 +1,69 @@
+ИНДИВИДУАЛЬНОЕ ЗАДАНИЕ 1
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Нахождение минимума двух чисел</title>
+</head>
+<body>
+  <script>
+    function findMin(a, b) {
+      return Math.min(a, b);
+    }
+
+var num1 = 10;
+var num2 = 5;
+var result = findMin(num1, num2);
+
+document.write("Минимум чисел " + num1 + " и " + num2 + " равен: " + result);
+ 
+ </script>
+</body>
+</html>
+
+\n
+ИНДИВИДУАЛЬНОЕ ЗАДАНИЕ 2
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример объявления переменных и копирования значений</title>
+</head>
+<body>
+  <script>
+    var admin, name;
+name = "Александр";
+admin = name;
+
+document.write(admin);
+
+  </script>
+</body>
+</html>
+\n
+ИНДИВИДУАЛЬНОЕ ЗАДАНИЕ 3  
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Подтверждение возраста</title>
+  <script>
+    function askAge() {
+      var age = prompt("Введите ваш возраст:");
+
+  if (age !== null) {
+    var confirmMessage = "Вы уверены, что вам " + age + " лет?";
+    
+    if (confirm(confirmMessage)) {
+      alert("Действие подтверждено.");
+    } else {
+      askAge(); // Повторный запрос возраста при нажатии "Отмена"
+    }
+  }
+}
+  </script>
+</head>
+<body>
+  <button onclick="askAge()">Проверить возраст</button>
+</body>
+</html>
+
+\n
